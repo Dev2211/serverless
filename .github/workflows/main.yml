@@ -5,20 +5,12 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-      # matrix:
-      #   node-version: [12.x]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-      
 
       - uses: actions/setup-node@v1
-        #  with: 
-          #  node-version: ${{matrix.node-version}}
-      # - uses: aws-actions/configure-aws-credentials@v1
       - run: npm ci
-
-      # - uses: serverless/github-action@master
         with:
 
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
