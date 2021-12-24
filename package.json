@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "7": "^0.0.1",
+    "git": "^0.1.5",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "serverless": "^2.69.1"
+  },
+  "name": "serverless"
+}
