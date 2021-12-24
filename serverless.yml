@@ -9,4 +9,6 @@ provider:
   region: us-east-1
 functions:
   hello:
-    handler: src/handler.hello
+    handler: src/handler.RendomNumber
+    timeout: 60 #sec
+    memorySize: 128 #mb
